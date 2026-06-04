@@ -15,4 +15,4 @@ jobs:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
       run: source setup.sh "Alone215" "Alone215" "$NGROK_AUTH_TOKEN"
     - name: Setup tmate Session
-      uses: mxschmitt/action-tmate@v4
+      uses: mxschmitt/action-tmate@v3
