@@ -27,8 +27,7 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate
 
 #install ngrok
-brew install --cask ngrok
+brew install --cask bore-cli
 
 #configure ngrok and start it
-ngrok authtoken $3
-ngrok tcp 5900 --region=in &
+bore local 22 --to bore.pub &
